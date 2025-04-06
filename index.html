@@ -20,6 +20,7 @@
 
     main {
       width: 90%;
+      max-width: 1200px;
       margin: 20px auto;
       background-color: white;
       padding: 20px;
@@ -37,17 +38,48 @@
       padding-bottom: 5px;
     }
 
-    table {
-      width: 100%;
-      border-spacing: 20px;
-    }
-
-    td {
+    .logo-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
       text-align: center;
     }
 
-    iframe {
-      width: 100%;
+    .logo-nav img {
+      max-width: 100px;
+      height: auto;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #3498db;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .video-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .video-row iframe {
+      flex: 1 1 300px;
+      min-width: 280px;
       max-width: 100%;
       height: 230px;
       border: none;
@@ -62,18 +94,18 @@
       margin-top: 40px;
     }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
+    @media (max-width: 600px) {
+      .logo-nav {
+        flex-direction: column;
+      }
 
-    ul li a {
-      text-decoration: none;
-      color: #3498db;
-    }
+      main {
+        padding: 10px;
+      }
 
-    ul li a:hover {
-      text-decoration: underline;
+      .video-row iframe {
+        height: 200px;
+      }
     }
   </style>
 </head>
@@ -84,21 +116,17 @@
 </header>
 
 <main>
-  <section>
-    <table>
-      <tr>
-        <td><img src="codehelplogo.png" alt="CodeHelp Logo" height="120" width="100"/></td>
-        <td>
-          <ul>
-            <li><a href="#sec1">Roadmap Videos</a></li>
-            <li><a href="#sec2">Operating System</a></li>
-            <li><a href="#sec3">DBMS</a></li>
-            <li><a href="#sec4">DSA</a></li>
-            <li><a href="#sec5">Web Development</a></li>
-          </ul>
-        </td>
-      </tr>
-    </table>
+  <section class="header-links">
+    <div class="logo-nav">
+      <img src="codehelplogo.png" alt="CodeHelp Logo"/>
+      <ul>
+        <li><a href="#sec1">Roadmap Videos</a></li>
+        <li><a href="#sec2">Operating System</a></li>
+        <li><a href="#sec3">DBMS</a></li>
+        <li><a href="#sec4">DSA</a></li>
+        <li><a href="#sec5">Web Development</a></li>
+      </ul>
+    </div>
   </section>
 
   <section>
@@ -109,66 +137,56 @@
   <!-- Roadmap Videos -->
   <section id="sec1">
     <h2>Roadmap Videos</h2>
-    <table>
-      <tr>
-        <td><iframe src="https://www.youtube.com/embed/3vI_2k3d1VE" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/i4GBfVDA7gk" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/pQN-pnXPaVg" allowfullscreen></iframe></td>
-      </tr>
-    </table>
+    <div class="video-row">
+      <iframe src="https://www.youtube.com/embed/3vI_2k3d1VE" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/i4GBfVDA7gk" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/pQN-pnXPaVg" allowfullscreen></iframe>
+    </div>
   </section>
 
   <!-- Operating System Videos -->
   <section id="sec2">
     <h2>Operating System Videos</h2>
-    <table>
-      <tr>
-        <td><iframe src="https://www.youtube.com/embed/3obEP8eLsCw" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/WgMPrLX-zsA" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/X3xXon2dFxc" allowfullscreen></iframe></td>
-      </tr>
-    </table>
+    <div class="video-row">
+      <iframe src="https://www.youtube.com/embed/3obEP8eLsCw" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/WgMPrLX-zsA" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/X3xXon2dFxc" allowfullscreen></iframe>
+    </div>
   </section>
 
   <!-- DBMS Videos -->
   <section id="sec3">
     <h2>DBMS Videos</h2>
-    <table>
-      <tr>
-        <td><iframe src="https://www.youtube.com/embed/TYo_CUnIWP8" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/z2kbsG8zsLM" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/cC7yA3dTLxk" allowfullscreen></iframe></td>
-      </tr>
-    </table>
+    <div class="video-row">
+      <iframe src="https://www.youtube.com/embed/TYo_CUnIWP8" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/z2kbsG8zsLM" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/cC7yA3dTLxk" allowfullscreen></iframe>
+    </div>
   </section>
 
   <!-- DSA Videos -->
   <section id="sec4">
     <h2>DSA Videos</h2>
-    <table>
-      <tr>
-        <td><iframe src="https://www.youtube.com/embed/BoHO04xVeU0" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/dr-pLeJBr38" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/YJeoQBevNVo" allowfullscreen></iframe></td>
-      </tr>
-    </table>
+    <div class="video-row">
+      <iframe src="https://www.youtube.com/embed/BoHO04xVeU0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/dr-pLeJBr38" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/YJeoQBevNVo" allowfullscreen></iframe>
+    </div>
   </section>
 
   <!-- Web Development Videos -->
   <section id="sec5">
     <h2>Web Development Videos</h2>
-    <table>
-      <tr>
-        <td><iframe src="https://www.youtube.com/embed/Vi9bxu-M-ag" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/BGeDBfCIqas" allowfullscreen></iframe></td>
-        <td><iframe src="https://www.youtube.com/embed/l1EssrLxt7E" allowfullscreen></iframe></td>
-      </tr>
-    </table>
+    <div class="video-row">
+      <iframe src="https://www.youtube.com/embed/Vi9bxu-M-ag" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/BGeDBfCIqas" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/l1EssrLxt7E" allowfullscreen></iframe>
+    </div>
   </section>
 </main>
 
 <footer>
-  <p> A web page desined by Lovely Dehar</p>
+  <p>A web page designed by Lovely Dehar</p>
 </footer>
 
 </body>
