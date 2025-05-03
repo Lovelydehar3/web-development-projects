@@ -6,197 +6,210 @@
     <title>Cards</title>
     <link rel="stylesheet" href="cards.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+       *{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+}
+.containor{
 
-        /* ---------- Card 1 ---------- */
-        .container {
-            width: 100vw;
-            height: 100vh;
-            min-height: 1300px;
-            background-image: radial-gradient(circle 404px at 20.3% 15.9%, rgba(0, 79, 255, 1) 0%, rgba(0, 240, 255, 1) 90%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    width: 100vw;
+    height: 100vh;
+    min-height: 1300px;
+    background-image: radial-gradient( circle 404px at 20.3% 15.9%,  rgba(0,79,255,1) 0%, rgba(0,240,255,1) 90% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-        .card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-            width: 360px;
-            height: 570px;
-            background: white;
-            border-radius: 40px;
-            padding: 20px;
-            box-shadow: 10px 10px 10px rgb(57, 129, 99);
-        }
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+   width:360px ;
+    height:570px ;
+    background: white;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgb(57, 129, 99);
+   
+}
+.card img{
 
-        .card img {
-            width: 99%;
-            height: 50%;
-            align-self: center;
-            border-radius: 40px;
-        }
+    width: 99%;
+    height: 50%;
+    align-self: center;
+    border-radius: 40px;
+}
+h2{
+   
+    font-size: 1.5rem;
+    font: bolder;
+   
+}
+.card p{
 
-        h2 {
-            font-size: 1.5rem;
-            font-weight: bolder;
-        }
+    margin: 2px;
+    gap: 10rem;
+   font-size: 1.2rem;
+}
 
-        .card p {
-            margin: 2px;
-            font-size: 1.2rem;
-            line-height: 1.4;
-            text-align: center;
-        }
+.containor2
+{
+width: 100vw;
+height: 100vh;
 
-        /* ---------- Card 2 ---------- */
-        .container2 {
-            width: 100vw;
-            height: 100vh;
-            background-image: radial-gradient(circle 404px at 20.3% 15.9%, rgb(78, 42, 177) 0%, rgb(24, 211, 186) 90%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+background-image: radial-gradient( circle 404px at 20.3% 15.9%,  rgb(78, 42, 177) 0%, rgb(24, 211, 186) 90% );
+display: flex;
+justify-content: center;
+align-items: center;
 
-        .card2 {
-            display: flex;
-            flex-direction: column;
-            width: 360px;
-            height: 570px;
-            gap: 15px;
-            background: white;
-            border-radius: 40px;
-            box-shadow: 10px 10px 10px rgb(57, 129, 99);
-            align-items: center;
-        }
+}
+.card2{
+display: flex;
+flex-direction: column;
+width: 360px;
+height: 570px;
+gap: 15px;
+background: white;
+border-radius: 40px;
+box-shadow: 10px 10px 10px rgb(57, 129, 99);
+align-items: center;
 
-        .card2 img {
-            width: 100%;
-            height: 30%;
-            border-top-right-radius: 40px;
-            border-top-left-radius: 40px;
-        }
 
-        .Box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 25px;
-            width: 90%;
-            font-size: 19px;
-        }
 
-        .hButton {
-            background: blue;
-            border: none;
-            width: 300px;
-            height: 65px;
-            border-radius: 40px;
-            box-shadow: 10px 10px 20px black;
-            font-size: large;
-            color: white;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+}
+.card2 img{
+width: 100%;
+height: 30%;
 
-        .hButton:hover {
-            background-color: darkblue;
-        }
+border-top-right-radius:40px;
+border-top-left-radius:40px;
+border-top: 10px;
 
-        .amt {
-            display: flex;
-            background-color: rgba(1, 1, 7, 0.5);
-            width: 90%;
-            height: 20%;
-            gap: 20px;
-            border-radius: 5px;
-            align-items: center;
-            justify-content: space-between;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
 
-        .a {
-            text-decoration: none;
-            color: blue;
-        }
+}
+.Box{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 25px;
+width: 90%;
+font-size: 19px;
 
-        .amt img {
-            border-radius: 20px;
-            width: 2em;
-            height: 2rem;
-        }
+}
+.hButton{
+background: blue;
+border: 10px;
+width: 300px;
+height: 65px;
+border-radius: 40px;
+box-shadow: 10px 10px 20px black;
+font-size: large;
+}
 
-        .right {
-            width: fit-content;
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            align-items: center;
-        }
 
-        /* ---------- Card 3 ---------- */
-        .container3 {
-            width: 100vw;
-            height: 100vh;
-            border-radius: 40px;
-            background-image: radial-gradient(circle 404px at 20.3% 15.9%, rgba(0, 79, 255, 1) 0%, rgba(73, 135, 206, 0.849) 90%);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.amt{ 
 
-        .card3 {
-            display: flex;
-            width: 1600px;
-            height: 800px;
-            font-size: 1.5rem;
-            border-radius: 40px;
-            box-shadow: 10px 10px 10px rgb(57, 129, 99);
-        }
+display: flex;
+background-color:rgba(1, 1, 7, 0.5);
+width: 90%;
+height: 20%;
+gap: 20px;
+border-radius: 5px;
+align-items: center;
+justify-content: space-between;
+padding-left: 20px;
+padding-right: 20px;
 
-        .leftBox {
-            display: flex;
-            flex-direction: column;
-            border-top-left-radius: 40px;
-            border-bottom-left-radius: 40px;
-            padding: 100px;
-            color: white;
-            width: 50%;
-            background-color: purple;
-            gap: 140px;
-        }
 
-        .rightBox {
-            width: 50%;
-            border-top-right-radius: 40px;
-            border-bottom-right-radius: 40px;
-        }
+}
+.a{
+text-decoration: none;
 
-        .imageFav {
-            width: 100%;
-            height: 100%;
-            border-top-right-radius: 40px;
-            border-bottom-right-radius: 40px;
-        }
+}
+.amt img{
+border-radius: 20px;
+gap: 10px;
+width: 2em;
+height: 2rem;
+}
+/* #p1,#p2{
+font-size: 20px;
+} */
+.right{
+width: fit-content;
+display: flex;
+gap: 15px;
+justify-content: center;
+align-items: center;
 
-        .shortBox {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
 
-        .big {
-            font-size: 2rem;
-            font-weight: bolder;
-        }
+
+
+}
+.containor3{
+
+width: 100vw;
+height: 100vh;
+border-radius: 40px;
+background-image: radial-gradient( circle 404px at 20.3% 15.9%,  rgba(0,79,255,1) 0%, rgba(73, 135, 206, 0.849) 90% );
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.card3{
+display: flex;
+
+width: 1600px;
+height: 800px;
+
+font-size: 1.5rem;
+border-radius: 40px;
+box-shadow: 10px 10px 10px rgb(57, 129, 99);
+
+
+
+
+
+}
+.leftBox{
+display: flex;
+flex-direction: column;
+border-top-left-radius: 40px;
+border-bottom-left-radius: 40px;
+
+padding:100px;
+color: white;
+width: 50%;
+background-color: purple;
+gap: 140px;
+}
+.rightBox{
+width:50%;
+border-top-right-radius: 40px;
+border-bottom-right-radius: 40px;
+
+}
+.imageFav{
+width: 100%;
+height: 100%;
+border-top-right-radius: 40px;
+border-bottom-right-radius: 40px;
+}
+.shortBox{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.big{
+font-size: 2rem;
+font-weight: bolder;
+}
     </style>
 </head>
 <body>
