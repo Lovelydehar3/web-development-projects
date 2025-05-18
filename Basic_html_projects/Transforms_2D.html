@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-Transforms</title>
+    >
+    <style>
+        .box{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(204, 204, 119);
+    border: 2px solid black;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    transition: all;
+transition-duration: 3s;
+transition-delay: 2s;
+transition-timing-function:3s;
+transition: all 3s linear 1s;
+
+    margin: auto ;
+}
+p{
+    font-size: 24px;
+   
+}
+
+.box:hover{
+    /* transform: rotate(360deg); */
+    /* transform: scale(2);
+    transform: ; */
+    /* transform: rotate(-45deg); */
+    /* transform: skew(-45deg); */
+    transform: translate(500px,500px);
+
+}
+.con{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    justify-self: center;
+    align-items: center;
+
+}
+    </style>
+</head>
+<body>
+<div class="con">
+
+    <div class="box">
+        <p>   This is my Web buddy</p>
+    </div>
+        
+</div>
+    </body>
+</html>
