@@ -1,26 +1,46 @@
-# My Web Development Projects
+# 🌐 Web Development Projects by Lovepreet Singh
 
-Welcome to my collection of web development projects. Here you will find different projects including card designs, study sync app, resources, and more coming soon!
-
----
-
-## Projects List
-
-- [Resources](https://lovelydehar3.github.io/web-development-projects/resources_link/index.html)  
-- [Cards Designs](https://lovelydehar3.github.io/web-development-projects/Cards/index.html)  
-- [StudySync](https://lovelydehar3.github.io/web-development-projects/StudySync/index.html)  
-- Coming soon...  
+Welcome to my **Web Development Projects** repository! This collection includes mini projects, UI components, and responsive designs built using HTML, CSS, and a little bit of JavaScript. It's a growing portfolio that showcases my front-end development skills.
 
 ---
 
-## Live Demo
+## 🚀 Live Projects (GitHub Pages)
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=github)](https://lovelydehar3.github.io/web-development-projects/)
+**🔗 Visit all projects here:**  
+👉 [https://lovelydehar3.github.io/web-development-projects/](https://lovelydehar3.github.io/web-development-projects/)
 
 ---
 
-## How to Use
+## 📁 Projects Showcase
 
-1. Clone this repo to your local machine  
-   ```bash
-   git clone https://github.com/Lovelydehar3/web-development-projects.git
+| Project Name       | Description                          |
+|--------------------|--------------------------------------|
+| **Resources**       | Curated list of developer resources |
+| **Cards Designs**   | Stylish card UI layouts             |
+| **StudySync**       | A responsive educational web app    |
+| **Coming Soon...**  | More creative projects on the way!  |
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (Basic)
+- Git & GitHub
+- GitHub Pages for Deployment
+
+---
+
+## 📌 How to Run Locally
+
+```bash
+git clone https://github.com/Lovelydehar3/web-development-projects.git
+cd web-development-projects
+# Open any folder and open index.html in a browser
+
+I'm Lovepreet Singh, a passionate front-end developer learning by building real-world projects. I aim to grow my skills and help others with useful resources and creative designs.
+
+📫 Connect with me on LinkedIn
+📧 Email: lovepreetsingh73437@gmail.com
+
