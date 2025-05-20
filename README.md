@@ -41,6 +41,3 @@ cd web-development-projects
 
 I'm Lovepreet Singh, a passionate front-end developer learning by building real-world projects. I aim to grow my skills and help others with useful resources and creative designs.
 
-📫 Connect with me on LinkedIn
-📧 Email: lovepreetsingh73437@gmail.com
-
