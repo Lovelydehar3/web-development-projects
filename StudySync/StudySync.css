@@ -562,6 +562,7 @@
 
             width: 100%;
             height: 100%;
+            overflow: hidden;
             border-top-left-radius: 8px;
             border-bottom-left-radius: 8px;
         }
@@ -571,12 +572,14 @@
             flex-direction: column;
 
             width: 50%;
-            height: 99%;
+            height: 100%;
             justify-content: center;
             align-items: start;
             text-align: left;
             background-color: rgba(128, 128, 128, 0.062);
-            margin-bottom: 1rem;
+        border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+    
             padding: 0 3rem;
             gap: 0.6rem;
         }
