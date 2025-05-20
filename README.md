@@ -1,18 +1,26 @@
-# 🌐 Web Development Projects
+# My Web Development Projects
 
-This repository contains my web development projects from beginner to professional level. Each project is organized in its own folder for easy navigation and learning.
+Welcome to my collection of web development projects. Here you will find different projects including card designs, study sync app, resources, and more coming soon!
 
-## 📁 Projects Included
+---
 
-- `Basic_html_projects/` – Fundamental HTML practice projects.
-- `Blog Project/` – Simple blog layout design using HTML & CSS.
-- `Cards/` – Multiple UI card designs with hover effects and responsiveness.
-- `Project_Recipe/` – Recipe page layout using modern HTML structure.
-- `Resources_link/` – Useful links and learning resources.
-- `StudySync/` – Web page design with CSS enhancements.
+## Projects List
 
-## 💡 How to Use
+- [Resources](https://lovelydehar3.github.io/web-development-projects/resources_link/index.html)  
+- [Cards Designs](https://lovelydehar3.github.io/web-development-projects/Cards/index.html)  
+- [StudySync](https://lovelydehar3.github.io/web-development-projects/StudySync/index.html)  
+- Coming soon...  
 
-1. Clone the repository:
+---
+
+## Live Demo
+
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue?style=for-the-badge&logo=github)](https://lovelydehar3.github.io/web-development-projects/)
+
+---
+
+## How to Use
+
+1. Clone this repo to your local machine  
    ```bash
    git clone https://github.com/Lovelydehar3/web-development-projects.git
