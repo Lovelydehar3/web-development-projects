@@ -48,6 +48,7 @@
     a {
       text-decoration: none;
       font-size: 1.1rem;
+      width: 220px;
       padding: 12px 25px;
       color: #fff;
       background: linear-gradient(to right, #2980b9, #6dd5fa);
