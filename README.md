@@ -1,4 +1,4 @@
-#🌐 Web Development Projects 💻#
+🌐 Web Development Projects 💻
 
 Welcome to my **Web Development Projects** repository!  
 This repo contains a collection of diverse front-end projects built with HTML, CSS, and JavaScript. Each project focuses on building practical skills through real-world web design and development challenges.
