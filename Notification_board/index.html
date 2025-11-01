@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NoticeBoard Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" id="loginContainer">
+    <h2>Welcome to NoticeBoard</h2>
+    <div class="form-box">
+      <input type="text" id="username" placeholder="Enter username" />
+      <input type="password" id="password" placeholder="Enter password" />
+      <button onclick="login()">Login</button>
+      <p>New user? <a href="#" onclick="toggleForm()">Register here</a></p>
+    </div>
+  </div>
+
+  <div class="container hidden" id="registerContainer">
+    <h2>Create Account</h2>
+    <div class="form-box">
+      <input type="text" id="regUsername" placeholder="Enter username" />
+      <input type="password" id="regPassword" placeholder="Enter password" />
+      <button onclick="register()">Register</button>
+      <p>Already have an account? <a href="#" onclick="toggleForm()">Login</a></p>
+    </div>
+  </div>
+
+  <div class="dashboard hidden" id="adminPanel">
+    <h2>Admin Panel</h2>
+    <div class="panel-header">
+      <input type="text" id="searchInput" placeholder="Search notices..." onkeyup="searchNotices()" />
+    </div>
+
+    <textarea id="noticeText" placeholder="Write a new notice..."></textarea>
+    <button onclick="postNotice()">Post Notice</button>
+    <button class="logout" onclick="logout()">Logout</button>
+
+    <h3>All Notices</h3>
+    <div class="scroll-box" id="noticeScroll">
+      <ul id="noticeList"></ul>
+    </div>
+    <div class="pagination" id="noticePagination"></div>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
