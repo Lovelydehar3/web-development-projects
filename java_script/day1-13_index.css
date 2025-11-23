@@ -1,0 +1,139 @@
+
+    * {
+      margin: 0;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    html,body{
+      width: 100%;
+      height: 100%;
+      
+    }
+    .yeah{ color: yellowgreen;}
+    .li{
+text-decoration: line-through;
+    }
+
+/* .ne{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 102, 0);
+    background-color: azure;
+}
+.pleaceholder{
+    width: 400px;
+    height: 500px;
+} */
+/* .color{
+    color: red;
+}
+    #main{
+      display: flex;
+     flex-direction: column;
+      margin-top: 10px;
+      margin-left: 10px;
+      padding-top:10px ;
+     padding-left: 10px;
+      width: 400px;
+    height: 400px;
+ 
+
+    }
+    form{
+      display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     
+    }
+    h1{
+        color: blueviolet;
+    } */
+    /* #input{
+     display: none;
+     
+    } */
+    
+    /* #inpu{
+      padding: 12px 22px;
+      background-color: red;
+ border-radius: 40px;
+      color: white ;
+    }
+    #main #inpu:hover{
+      background-color: rgb(139, 14, 14);
+
+    } */
+    /* .card{
+      display: flex;
+      flex-direction: column;
+      color:white;
+      margin: 10px;
+      
+      padding: 10px;
+      border: 1rem;
+      border-color: rgba(226, 33, 210, 0.719);
+     width: 300px;
+    height: 200px;
+    padding-left: 10px;
+    overflow: hidden;
+     border: grey solid .2rem;
+      border-radius: 10%;
+      padding: 1.5 rem;
+      
+     
+    }
+    .newCard{
+    margin-top: 10px;
+      margin-left: 5px;
+      padding: 1rem;
+      max-width: 400px;
+      max-height: 200px;
+     
+    }
+    .profile{
+      margin-top: 10px;
+      margin-left: 5px;
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      border-radius: 30px;
+      margin-bottom: 5px;
+      color: white;
+    }
+    .profile img{
+      height: 100%;
+      width: 100%;
+    }
+   input{
+    padding: 0.2rem;
+   }
+    */
+    /* #main{
+      position: absolute;
+      transition: all cubic-bezier(0.19, 1, 0.22, 1);
+      width: 150px;
+      height: 150px;
+      background-color: red;
+    } */
+
+    /* #main{
+      
+height: 100%;
+      width: 100%;
+      background-color: black(175, 65, 218, 0.562);
+    }
+    #nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 100%;
+      height: 100px;
+      background-color: aquamarine;
+    }
+    a{
+      color: white;
+    }
+    button{
+      padding: 12px 22px;
+      background-color: red;
+      border-radius: 10px;
+    } */

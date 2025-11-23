@@ -1,0 +1,59 @@
+/* Reset and base setup */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme colors */
+body.light {
+  background-color: #b93838;
+  color: #111;
+}
+
+body.dark {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Main container */
+.container {
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+#toggle-btn {
+  background-color: #666;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#toggle-btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+
+/* Optional smoother transition */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call/Note Card App</title>
+    <link rel="stylesheet" href="practice3.css">
+</head>
+<body>
+
+    <div class="note-container">
+        <div class="note-card">
+            <div class="top-section">
+                <img src="https://via.placeholder.com/60/0000FF/808080?text=FU" alt="Profile Image" class="profile-img">
+                <h3 class="name">Fatima Uma</h3>
+                <div class="right-colors">
+                    <div class="color-dot black"></div>
+                    <div class="color-dot orange"></div>
+                    <div class="color-dot purple"></div>
+                    <div class="color-dot teal"></div>
+                </div>
+            </div>
+
+            <div class="details">
+                <div class="detail-item">
+                    <span class="label">Home town</span>
+                    <span class="value">Singapore</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Bookings</span>
+                    <span class="value">3 times</span>
+                </div>
+            </div>
+            
+            <div class="left-icons">
+                <div class="icon-arrow up">▲</div>
+                <div class="icon-stack"></div> <div class="icon-arrow down">▼</div>
+            </div>
+
+            <div class="actions">
+                <button class="call-btn">Call</button>
+                <button class="message-btn">Message</button>
+            </div>
+        </div>
+        
+        <div class="note-card">...</div> 
+        <div class="note-card">...</div> 
+
+    </div>
+
+    <div class="form-container">
+        <h2>New Call</h2>
+        <form>
+            <div class="input-group">
+                <label for="image-url">Image URL</label>
+                <input type="text" id="image-url" placeholder="https://example.com/photo.jpg">
+            </div>
+            <div class="input-group">
+                <label for="full-name">Full Name</label>
+                <input type="text" id="full-name" placeholder="Enter full name">
+            </div>
+            <div class="input-group">
+                <label for="home-town">Home town</label>
+                <input type="text" id="home-town" placeholder="Enter home town">
+            </div>
+            <div class="input-group">
+                <label for="purpose">Purpose</label>
+                <input type="text" id="purpose" placeholder="e.g., Quick appointment note">
+            </div>
+            
+            <div class="category-group">
+                <label>Category</label>
+                <div class="radio-buttons">
+                    <input type="radio" id="emergency" name="category" value="emergency">
+                    <label for="emergency" class="tag tag-emergency">Emergency</label>
+                    
+                    <input type="radio" id="important" name="category" value="important">
+                    <label for="important" class="tag tag-important">Important</label>
+                    
+                    <input type="radio" id="urgent" name="category" value="urgent">
+                    <label for="urgent" class="tag tag-urgent">Urgent</label>
+
+                    <input type="radio" id="no-tag" name="category" value="none" checked>
+                    <label for="no-tag" class="tag tag-none">No Tag</label>
+                </div>
+            </div>
+
+            <button type="submit" class="create-btn">Create Note</button>
+            <button type="button" class="close-btn">Close</button>
+        </form>
+    </div>
+    
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="day14_index.css">
+    <title>Form And Validation</title>
+</head>
+<body>
+    
+    <!-- <form action="">
+        <input type="text" placeholder="Name" id="name">
+        
+        <div id="hid">
+            <br>
+            <small >Name Should be greater than two letters<small>
+        </div>
+        <br>
+        <input id="email" type="email" placeholder="E-mail">
+        <br>
+        <input type="current-passwowrd" placeholder="passwowrd">
+        <br>
+        <input type="Phone number" pattern="[0-9]{0,10}" placeholder="Phone number" > 
+        <br>
+        <select name="Gender" id="">
+            <option value="" hidden="none">choose your gender</option>
+            <option value="Male">MALE</option>
+            <Option value="Female">Female</Option>
+            <option value="Others">Others</option>
+        </select><br>
+        <input type="submit" value="Submit">
+    </form> -->
+
+
+    <div id="main">
+        <div id="container">
+            <h2>Email and password validater</h2>
+            <form action="">
+                <label for="email">Email:
+                </label>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+                <small id="emailerror">Email is invalid</small>
+                <br>
+                <label for="current-password">password:</label>
+                <input type="current-password"  id="password" placeholder=" Enter your password" required>
+                <small id="passworderror">Password is invalid</small>
+                <br>
+                <button type="submit">Validate</button>
+                <br>
+                <div id="small">
+
+                    <small id="result"></small>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="day14_forms_and_vaidation.js"></script>
+</body>
+</html>

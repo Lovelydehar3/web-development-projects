@@ -1,0 +1,288 @@
+/* --- Global Styles & Body --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0; /* Light background */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* --- Note Cards Container (The main grid area for 30 cards) --- */
+.note-container {
+    display: flex; /* Adjust to a grid if you want multiple columns */
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+/* --- Individual Note Card Style (Fatima Uma card) --- */
+.note-card {
+    position: relative;
+    width: 280px; /* Card size */
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Top Section: Image, Name, Colors */
+.top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 3px solid #f0f0f0;
+}
+
+.name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: auto;
+}
+
+/* Right Colors */
+.right-colors {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute; /* Place colors on the right edge */
+    right: 15px;
+    top: 25px;
+}
+
+.color-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.black { background-color: black; }
+.orange { background-color: orange; }
+.purple { background-color: purple; }
+.teal { background-color: teal; }
+
+/* Left Icons/Stack */
+.left-icons {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    /* This section is tricky visually, styling based on apparent position */
+}
+
+.icon-arrow {
+    font-size: 10px;
+    color: #999;
+}
+
+.icon-stack {
+    width: 5px;
+    height: 25px;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+
+/* Middle Section: Details */
+.details {
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Allows items to take up half the width */
+    min-width: 100px;
+}
+
+.label {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.value {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+
+/* Bottom Section: Buttons */
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.call-btn, .message-btn {
+    flex: 1;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.call-btn {
+    background-color: black;
+    color: white;
+}
+
+.message-btn {
+    background-color: #eee;
+    color: black;
+}
+
+/* --- Form Container (The 'New Call' interface) --- */
+.form-container {
+    /* KEY STYLES from your image for centering and hiding/showing */
+    display: none; /* **Initial state: Hidden** - Your JS will change this to 'block' or 'flex' */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the element */
+    z-index: 99999; /* Ensures it sits above everything */
+
+    /* Visible styles */
+    background: white;
+    padding: 24px;
+    border-radius: 22px;
+    width: 30rem; /* Width seen in the image */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05), 0 0 8px rgba(0, 0, 0, 0.05); /* Similar box-shadow */
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+/* Category/Tag Styling */
+.category-group {
+    margin-bottom: 25px;
+}
+
+.category-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.radio-buttons input[type="radio"] {
+    display: none;
+}
+
+.tag {
+    font-size: 14px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    user-select: none;
+}
+
+/* Tag Colors */
+.tag-emergency { background-color: #fce4e4; color: #cc0000; }
+.tag-important { background-color: #fff8e1; color: #ff6f00; }
+.tag-urgent { background-color: #e3f2fd; color: #1976d2; }
+.tag-none { background-color: #eee; color: #555; }
+
+.radio-buttons input[type="radio"]:checked + .tag {
+    /* Style for the selected tag, e.g., slightly darker border */
+    border: 2px solid; 
+    padding: 3px 10px; /* Adjust padding to keep size consistent with border */
+}
+.radio-buttons input[type="radio"]:checked + .tag-emergency { border-color: #cc0000; }
+.radio-buttons input[type="radio"]:checked + .tag-important { border-color: #ff6f00; }
+.radio-buttons input[type="radio"]:checked + .tag-urgent { border-color: #1976d2; }
+.radio-buttons input[type="radio"]:checked + .tag-none { border-color: #555; }
+
+
+/* Form Buttons */
+.create-btn, .close-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.create-btn {
+    background-color: black;
+    color: white;
+}
+
+.close-btn {
+    background-color: #f44336; /* Red color from the image */
+    color: white;
+    margin-top: 8px;
+}
+
+/* Overlay to dim the background when the form is active */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    display: none; /* **Initial state: Hidden** - Your JS will change this to 'block' */
+}
